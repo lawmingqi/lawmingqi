@@ -19,6 +19,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -32,13 +33,13 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Replace with your token secret
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Ensure this matches your secret
 
-      - name: Push changes to output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
           commit_message: "Update snake animations"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Replace with your token secret
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Ensure this matches your secret
