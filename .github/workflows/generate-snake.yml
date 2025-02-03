@@ -17,19 +17,14 @@ on:
 
 # The sequence of runs in this workflow:
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Clone repo
+      - name: Checkout code
         uses: actions/checkout@v3
-    
-      - name: Generate the snake files in './dist/'
+
+      - name: Generate Snake GIF
         uses: Platane/snk@v3
-        id: snake-gif
         with:
           github_user_name: lawmingqi
           outputs: |
@@ -37,17 +32,13 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Replace with your token secret
 
-      - name: Show build status
-        run: git status
-
-      - name: Push new files to the output branch
+      - name: Push changes to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output  # Ensure this is the branch you created
+          target_branch: output
           build_dir: dist
-          commit_message: Update snake animations
+          commit_message: "Update snake animations"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Replace with your token secret
