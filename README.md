@@ -2,14 +2,21 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Lobster&size=35&center=true&vCenter=true&width=500&height=70&duration=3500&lines=Hi+There!+👋;+I'm+Ming+Qi!;&color=f0e2f8" />
 </h1>
 
+  <img align = "right" src="https://static.vecteezy.com/system/resources/previews/042/820/502/non_2x/cute-icon-character-dinosaur-and-laptop-free-png.png" alt="Dinosaur and Laptop" width="200" height="200" />
 🎓 IT Student @ Ngee Ann Polytechnic | Software Engineering<br>
 💭 Currently diving into Full Stack Development and DSA<br><br>
-🏆 My Tech Goals for 2025:<br>
-🔹 Get at least 8 hours of sleep.<br>
-🔹 Create my own digital garden.<br>
-🔹 Write documentation that future me will actually understand.<br>
-🔹 Make my commit messages sound less like emotional breakdowns.<br><br>
-📌 Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/law-ming-qi/" target="_blank">#connectwithme</a><br>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <span>
+    🏆 My Tech Goals for 2025:<br>
+    🔹 Get at least 8 hours of sleep.<br>
+    🔹 Create my own digital garden.<br>
+    🔹 Write documentation that future me will actually understand.<br>
+    🔹 Make my commit messages sound less like emotional breakdowns.<br><br>
+    📌 Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/law-ming-qi/" target="_blank">#connectwithme</a>
+  </span>
+</div>
+<br>
 
 ![Ming Qi's GitHub stats](https://github-readme-stats.vercel.app/api?username=lawmingqi&show_icons=true&bg_color=f0e2f8&text_color=000000&title_color=8c9de2&icon_color=8c9de2)<br/>
 
