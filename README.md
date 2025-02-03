@@ -1,4 +1,4 @@
-### Hi, I'm Ming Qi! 🌷🚀😆
+### 👋Hi, I'm Ming Qi!
 
 🎓 IT Student @ Ngee Ann Polytechnic | Software Engineering<br>
 💭 Currently diving into Full Stack Development and DSA<br><br>
